@@ -1,0 +1,18 @@
+# Pretty URL safety nets
+/services           /services/           301
+/about              /about/              301
+/contact            /contact/            301
+/intake              /intake/              301
+/reiki-and-energy-healing  /services/reiki-and-energy-healing/  301
+/massage-therapy    /services/massage-therapy/  301
+/somatic-stress-release /services/somatic-stress-release/ 301
+/breathwork         /services/breathwork/ 301
+/yoga-and-meditation /services/yoga-and-meditation/ 301
+/coaching           /services/coaching/ 301
+/tarot-astrology-readings /services/tarot-astrology-readings/ 301
+/sound-healing      /services/sound-healing/ 301
+/reiki              /services/reiki-traditions/ 301
+/about-4            /services/sound-healing/ 301
+/holistic-health    /services/holistic-health/ 301
+/eft                /services/eft/ 301
+/spiritual-holistic-form /intake/ 301
