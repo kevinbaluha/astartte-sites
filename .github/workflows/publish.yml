@@ -1,0 +1,51 @@
+name: Publish to Cloudflare Pages
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: pages-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  deployments: write
+  pull-requests: write
+
+jobs:
+  publish:
+    name: Deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy to Cloudflare Pages
+        id: deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          # Static site — repo root is the Pages output
+          command: >
+            pages deploy .
+            --project-name=astartte-sites
+            --branch=${{ github.head_ref || github.ref_name }}
+            --commit-dirty=true
+
+      - name: Deployment summary
+        if: always() && steps.deploy.outputs.deployment-url != ''
+        run: |
+          {
+            echo "## Cloudflare Pages"
+            echo ""
+            echo "- **Deployment URL:** ${{ steps.deploy.outputs.deployment-url }}"
+            echo "- **Alias URL:** ${{ steps.deploy.outputs.pages-deployment-alias-url }}"
+            echo "- **Branch:** \`${{ github.head_ref || github.ref_name }}\`"
+            echo "- **Commit:** \`${{ github.sha }}\`"
+          } >> "$GITHUB_STEP_SUMMARY"

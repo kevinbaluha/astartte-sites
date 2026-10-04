@@ -25,21 +25,51 @@ npx wrangler pages dev .
 
 ## Deploy to Cloudflare Pages
 
-1. Push this repo to GitHub (already: `kevinbaluha/astartte-sites`).
-2. Cloudflare Dashboard → **Workers & Pages** → **Create** → **Pages** → Connect GitHub.
-3. Select `astartte-sites`.
-4. Build settings:
-   - **Framework preset:** None
-   - **Build command:** *(leave empty)*
-   - **Build output directory:** `/` (repo root)
-5. Save and deploy.
-6. Optional: attach custom domain `centerforhealingarts.net`.
+### Automated (GitHub Actions) — preferred
 
-CLI deploy (if `wrangler` is logged in):
+Workflow: [`.github/workflows/publish.yml`](.github/workflows/publish.yml)
+
+| Event | Result |
+|---|---|
+| Push to `main` | Production deploy (`astartte-sites`, branch `main`) |
+| Pull request | Preview deploy on the PR branch |
+| **Actions → Publish → Run workflow** | Manual deploy |
+
+**One-time setup**
+
+1. Cloudflare Dashboard → **My Profile** → **API Tokens** → **Create Token**
+   - Use template **Edit Cloudflare Workers** (includes Pages), or custom token with:
+     - Account · Cloudflare Pages · Edit
+     - Account · Account Settings · Read (optional, for account listing)
+2. Copy **Account ID** from the right sidebar of any Workers/Pages overview page.
+3. In GitHub repo **Settings → Secrets and variables → Actions**, add:
+   - `CLOUDFLARE_API_TOKEN` — the token
+   - `CLOUDFLARE_ACCOUNT_ID` — the account id
+4. (Optional) Pre-create the project once:
+   ```bash
+   npx wrangler pages project create astartte-sites --production-branch=main
+   ```
+   If the project does not exist yet, the first successful Actions deploy with a valid token usually creates it when using `pages deploy`.
+5. Push to `main` or run the workflow manually.
+
+Deployment URL and alias are written to the Actions job summary.
+
+### Manual CLI
 
 ```bash
-npx wrangler pages deploy . --project-name=astartte-sites
+npx wrangler login   # once, interactive
+npx wrangler pages deploy . --project-name=astartte-sites --branch=main
 ```
+
+### Dashboard Git integration (alternative)
+
+You can instead connect the repo in **Workers & Pages → Create → Pages → Connect to Git** with:
+
+- Framework preset: **None**
+- Build command: *(empty)*
+- Build output directory: `/`
+
+Do **not** enable both Dashboard Git builds *and* this Actions workflow on the same project, or every push will double-deploy. Pick one.
 
 ## Content notes
 
