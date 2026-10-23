@@ -1,3 +1,5 @@
+**Primary domain:** AsttarteDeva.com (centerforhealingarts.net may forward).
+
 # Asttarte Deva Healing Wellness Center
 
 Static port of [the Wix site](https://asttartedeva.wixsite.com/centerforhealingarts) for **Cloudflare Pages**.
