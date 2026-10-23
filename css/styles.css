@@ -432,3 +432,9 @@ section { padding: 3.5rem 0; }
 @media (min-width: 800px) {
   .blog-item { grid-template-columns: 1fr auto; align-items:center; }
 }
+
+.feature-card img.promo {
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background: #f3ebe1;
+}
