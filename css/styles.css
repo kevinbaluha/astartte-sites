@@ -430,6 +430,7 @@ section { padding: 3.5rem 0; }
 .split-img { border-radius:20px; overflow:hidden; border:1px solid var(--line); box-shadow:var(--shadow); }
 .split-img img { width:100%; display:block; aspect-ratio: 4/5; object-fit:cover; }
 .split-img img.session-portrait { aspect-ratio: 1 / 1; object-position: center 30%; }
+.split-img img.landscape { aspect-ratio: 3 / 2; object-position: center; }
 @media (min-width: 800px) {
   .blog-item { grid-template-columns: 1fr auto; align-items:center; }
 }
@@ -443,4 +444,9 @@ section { padding: 3.5rem 0; }
   aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center 28%;
+}
+.feature-card img.landscape {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: center;
 }
