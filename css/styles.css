@@ -432,6 +432,8 @@ section { padding: 3.5rem 0; }
 .split-img img { width:100%; display:block; aspect-ratio: 4/5; object-fit:cover; }
 .split-img img.session-portrait { aspect-ratio: 1 / 1; object-position: center 30%; }
 .split-img img.landscape { aspect-ratio: 3 / 2; object-position: center; }
+.page-banner { margin: 0; }
+.page-banner img { width: 100%; height: auto; display: block; }
 @media (min-width: 800px) {
   .blog-item { grid-template-columns: 1fr auto; align-items:center; }
 }
