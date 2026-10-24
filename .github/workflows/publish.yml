@@ -34,7 +34,7 @@ jobs:
           # Static site — repo root is the Pages output
           command: >
             pages deploy .
-            --project-name=astartte-sites
+            --project-name=asttarte-deva
             --branch=${{ github.head_ref || github.ref_name }}
             --commit-dirty=true
 
