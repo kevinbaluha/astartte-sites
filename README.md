@@ -98,4 +98,4 @@ Do **not** enable both Dashboard Git builds *and* this Actions workflow on the s
 | `/holistic-health` | `/services/holistic-health/` |
 | `/eft` | `/services/eft/` |
 | `/contact` | `/contact/` |
-| `/spiritual-holistic-form` | `/intake/` |
+| `/spiritual-holistic-form` | `/contact/` |
