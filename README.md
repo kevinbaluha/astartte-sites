@@ -75,9 +75,9 @@ Do **not** enable both Dashboard Git builds *and* this Actions workflow on the s
 
 ## Content notes
 
-- Contact, phone, email, Calendly, and service copy were taken from the public Wix site (Oct 2026).
-- Intake uses a `mailto:` fallback; swap for Cloudflare Workers / Formspree before production traffic.
-- Blog was not ported (Wix CMS). Add later if needed.
+- Contact, phone, email, Calendly, and service copy were taken from the public Wix site (Oct 2026), then updated with Asttarte’s intimacy and cacao pages.
+- No intake form. Booking is Calendly; old intake URLs redirect to contact.
+- Blog posts from the Wix site are under `/blog/`.
 - Pricing figures appear only where published on the source Reiki page.
 
 ## Source map
