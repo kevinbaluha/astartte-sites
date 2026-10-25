@@ -91,7 +91,7 @@ Do **not** enable both Dashboard Git builds *and* this Actions workflow on the s
 | `/somatic-stress-release` | `/services/somatic-stress-release/` |
 | `/breathwork` | `/services/breathwork/` |
 | `/yoga-and-meditation` | `/services/private-yoga-sessions/` |
-| `/coaching` | `/services/coaching/` |
+| `/coaching` | `/services/intimacy-coaching/` |
 | `/tarot-astrology-readings` | `/services/tarot-astrology-readings/` |
 | `/about-4` (Sound Healing) | `/services/sound-healing/` |
 | `/reiki` | `/services/reiki-traditions/` |
