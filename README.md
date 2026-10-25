@@ -90,7 +90,7 @@ Do **not** enable both Dashboard Git builds *and* this Actions workflow on the s
 | `/massage-therapy` | `/services/massage-therapy/` |
 | `/somatic-stress-release` | `/services/somatic-stress-release/` |
 | `/breathwork` | `/services/breathwork/` |
-| `/yoga-and-meditation` | `/services/yoga-and-meditation/` |
+| `/yoga-and-meditation` | `/services/private-yoga-sessions/` |
 | `/coaching` | `/services/coaching/` |
 | `/tarot-astrology-readings` | `/services/tarot-astrology-readings/` |
 | `/about-4` (Sound Healing) | `/services/sound-healing/` |

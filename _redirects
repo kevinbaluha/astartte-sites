@@ -9,7 +9,9 @@
 /massage-therapy    /services/massage-therapy/  301
 /somatic-stress-release /services/somatic-stress-release/ 301
 /breathwork         /services/breathwork/ 301
-/yoga-and-meditation /services/yoga-and-meditation/ 301
+/yoga-and-meditation /services/private-yoga-sessions/ 301
+/services/yoga-and-meditation /services/private-yoga-sessions/ 301
+/services/yoga-and-meditation/ /services/private-yoga-sessions/ 301
 /coaching           /services/coaching/ 301
 /tarot-astrology-readings /services/tarot-astrology-readings/ 301
 /sound-healing      /services/sound-healing/ 301
