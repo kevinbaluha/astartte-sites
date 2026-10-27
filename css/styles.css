@@ -453,3 +453,11 @@ section { padding: 3.5rem 0; }
   object-fit: cover;
   object-position: center;
 }
+
+/* On-page section buttons and back-to-top links */
+.section-jump { display:flex; flex-wrap:wrap; gap:0.5rem; max-width:920px; padding:1.25rem 0 1.5rem; }
+.section-jump .btn { padding:0.55rem 1rem; font-size:0.95rem; background:var(--white); }
+.prose h2[id], #top { scroll-margin-top: 6rem; }
+.back-to-top { margin: 0.5rem 0 2rem; font-size:0.95rem; }
+.back-to-top a { font-weight:600; text-decoration:none; }
+.back-to-top a:hover { text-decoration:underline; }
