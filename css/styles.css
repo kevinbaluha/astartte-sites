@@ -465,3 +465,8 @@ section { padding: 3.5rem 0; }
 .section-jump + .section-jump-note { margin-top:-0.5rem; }
 .prose h4 { font-size:1.08rem; margin:1.5rem 0 0.5rem; color:var(--navy); }
 .prose h3[id] { scroll-margin-top: 6rem; }
+
+/* Newsletter prompt in footer */
+.newsletter-prompt { line-height: 1.3; }
+.newsletter-prompt p { color: var(--muted); }
+.newsletter-prompt .btn { white-space: nowrap; }
