@@ -24,3 +24,22 @@
 /spiritual-holistic-form /contact/ 301
 /intimacy           /services/intimacy-coaching/ 301
 /cacao              /services/cacao-ceremonies/ 301
+
+# Additional old path redirects to prevent 404s from prior links
+/post/*               /blog/               301
+/blog/*               /blog/               200
+/reiki-traditions     /services/reiki-traditions/ 301
+/services/reiki       /services/reiki-traditions/ 301
+/additional-energy-practices /services/additional-energy-practices/ 301
+/eft                  /services/eft/ 301
+/holistic-health      /services/holistic-health/ 301
+/spiritual-holistic-form /contact/ 301
+/intimacy-coaching    /services/intimacy-coaching/ 301
+/massage              /services/massage-therapy/ 301
+/yoga                 /services/private-yoga-sessions/ 301
+/tarot                /services/tarot-astrology-readings/ 301
+/sound                /services/sound-healing/ 301
+/cacao-ceremonies     /services/cacao-ceremonies/ 301
+/breathwork           /services/breathwork/ 301
+/somatic-stress-release /services/somatic-stress-release/ 301
+/reiki-and-energy-healing /services/reiki-and-energy-healing/ 301
