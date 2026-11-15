@@ -43,3 +43,20 @@
 /breathwork           /services/breathwork/ 301
 /somatic-stress-release /services/somatic-stress-release/ 301
 /reiki-and-energy-healing /services/reiki-and-energy-healing/ 301
+
+# Additional redirects for old paths referenced in external indexed sites (newsletters, directories, old Wix links)
+# These prevent 404s from people clicking old search results or links
+
+/plant-medicine-psychedelic-integration /services/breathwork/ 301
+/plant-medicine /services/breathwork/ 301
+/tantra-coaching /services/intimacy-coaching/ 301
+/couples-coaching /services/intimacy-coaching/ 301
+/private-healing /services/reiki-and-energy-healing/ 301
+/energy-healing-sessions /services/reiki-and-energy-healing/ 301
+/chakra-balancing /services/reiki-and-energy-healing/ 301
+/past-life-healing /services/reiki-and-energy-healing/ 301
+/grief-coaching /services/intimacy-coaching/ 301
+/eft-tapping /services/eft/ 301
+/somatic-stress-release-therapy /services/somatic-stress-release/ 301
+/tantra /services/intimacy-coaching/ 301
+/shamanic /services/reiki-and-energy-healing/ 301
